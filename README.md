@@ -62,3 +62,39 @@ Charlie -> 260
 Total Score: 835
 Submission Response: {"regNo":"RA2311003030302","totalPollsMade":...,"submittedTotal":835,"attemptCount":...}
 ```
+
+## Project Structure
+
+```
+src/
+├── main/java/com/riddhi/quiz/
+│   ├── Main.java               # Entry point
+│   ├── ApiClient.java          # HTTP calls to the validator API
+│   ├── QuizService.java        # Core leaderboard logic
+│   └── model/
+│       ├── Event.java          # Represents a single quiz event
+│       ├── LeaderboardEntry.java
+│       └── QuizResponse.java   # API response model
+└── test/java/com/riddhi/quiz/
+    └── QuizServiceTest.java    # Unit + integration tests
+```
+
+---
+
+## API Reference
+
+**Base URL:** `https://devapigw.vidalhealthtpa.com/srm-quiz-task`
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/quiz/messages?regNo={regNo}&poll={0-9}` | Fetch quiz events for a specific poll |
+| POST | `/quiz/submit` | Submit the final leaderboard |
+
+---
+
+## Update Registration Number
+
+Edit `REG_NO` in `Main.java` before running:
+```java
+private static final String REG_NO = "RA2311003030302";
+```
