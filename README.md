@@ -25,7 +25,7 @@ Before running the application, you need to set your registration number.
 2. Find the `REG_NO` constant on line 8.
 3. Replace the placeholder value with your actual registration number.
 ```java
-private static final String REG_NO = "YOUR_REG_NO";
+private static final String REG_NO = "RA2311003030302";
 ```
 
 ### 3. Build the Project
