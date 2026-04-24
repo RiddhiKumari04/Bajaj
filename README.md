@@ -60,5 +60,5 @@ Bob -> 295
 Alice -> 280
 Charlie -> 260
 Total Score: 835
-Submission Response: {"regNo":"YOUR_REG_NO","totalPollsMade":...,"submittedTotal":835,"attemptCount":...}
+Submission Response: {"regNo":"RA2311003030302","totalPollsMade":...,"submittedTotal":835,"attemptCount":...}
 ```
